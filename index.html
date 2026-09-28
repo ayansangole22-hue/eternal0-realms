@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eternal Realms</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor:none;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* CUSTOM CURSOR */
+
+.cursor{
+    width:35px;
+    height:35px;
+    border:2px solid #fff;
+    border-radius:50%;
+    position:fixed;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+    z-index:9999;
+    transition:width .2s,height .2s;
+}
+
+.cursor-dot{
+    width:6px;
+    height:6px;
+    background:#fff;
+    border-radius:50%;
+    position:fixed;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+    z-index:10000;
+}
+
+/* HERO */
+
+header{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    padding:20px;
+}
+
+header h1{
+    font-size:5rem;
+    letter-spacing:5px;
+    margin-bottom:15px;
+}
+
+header p{
+    color:#bdbdbd;
+    font-size:1.2rem;
+    max-width:700px;
+}
+
+.join-btn{
+    margin-top:35px;
+    text-decoration:none;
+    color:white;
+    border:2px solid white;
+    padding:15px 40px;
+    border-radius:50px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.join-btn:hover{
+    background:white;
+    color:black;
+}
+
+/* SECTIONS */
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.card{
+    background:#080808;
+    border:1px solid #1a1a1a;
+    border-radius:20px;
+    padding:35px;
+    margin-bottom:30px;
+    transition:.3s;
+}
+
+.card:hover{
+    border-color:#444;
+    transform:translateY(-5px);
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+}
+
+.feature{
+    background:#101010;
+    border:1px solid #222;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    transition:.3s;
+}
+
+.feature:hover{
+    transform:translateY(-8px);
+    border-color:white;
+}
+
+.feature h3{
+    margin-bottom:10px;
+}
+
+/* RED CARDS */
+
+.red-cards{
+    border:2px solid #ff1e1e;
+}
+
+.red-cards h2{
+    color:#ff1e1e;
+}
+
+.red-cards ul{
+    padding-left:20px;
+}
+
+.red-cards li{
+    margin:12px 0;
+}
+
+/* STAFF */
+
+.staff{
+    border:2px solid #444;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#777;
+}
+</style>
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor-dot"></div>
+
+<header>
+    <h1>🌌 ETERNAL REALMS</h1>
+
+    <p>
+        A Community • Social • Gaming Discord Server
+        built for friendly conversations, fun minigames,
+        events, and a safe family-friendly environment.
+    </p>
+
+    <a href="https://discord.gg/RAWaRfnQsM"
+       target="_blank"
+       class="join-btn">
+       Join Eternal Realms
+    </a>
+</header>
+
+<section>
+
+    <div class="card">
+        <h2>About Eternal Realms</h2>
+        <p>
+            Eternal Realms is a welcoming Discord server focused on
+            community building, gaming, social interaction, minigames,
+            and creating a fun environment where everyone feels included.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Server Features</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>🤝 Community</h3>
+                <p>Meet new people and build friendships.</p>
+            </div>
+
+            <div class="feature">
+                <h3>💬 Social</h3>
+                <p>Active chats and engaging conversations.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🎮 Gaming</h3>
+                <p>Gaming discussions, events and hangouts.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🏆 Minigames</h3>
+                <p>Fun activities and entertaining server games.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🛡️ SFW</h3>
+                <p>Safe-for-work environment for everyone.</p>
+            </div>
+
+            <div class="feature">
+                <h3>👨‍👩‍👧‍👦 Family Friendly</h3>
+                <p>Respectful, welcoming and inclusive community.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card staff">
+        <h2>🛡️ Staff Team</h2>
+
+        <p>
+            Our staff team works hard to keep Eternal Realms
+            safe, fair and enjoyable. Please respect staff
+            members and their decisions to help maintain
+            a positive community.
+        </p>
+    </div>
+
+    <div class="card red-cards">
+        <h2>🚨 Red Cards</h2>
+
+        <p>
+            The following actions are strictly prohibited
+            and may result in warnings, mutes, kicks or bans.
+        </p>
+
+        <br>
+
+        <ul>
+            <li>❌ Doxxing</li>
+            <li>❌ Harassing members</li>
+            <li>❌ Rape jokes</li>
+            <li>❌ Arguing with staff decisions</li>
+        </ul>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Eternal Realms • All Rights Reserved
+</footer>
+
+<script>
+const cursor = document.querySelector(".cursor");
+const dot = document.querySelector(".cursor-dot");
+
+document.addEventListener("mousemove", (e) => {
+    dot.style.left = e.clientX + "px";
+    dot.style.top = e.clientY + "px";
+
+    setTimeout(() => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+    }, 40);
+});
+
+document.querySelectorAll("a, button, .feature").forEach(el => {
+    el.addEventListener("mouseenter", () => {
+        cursor.style.width = "55px";
+        cursor.style.height = "55px";
+    });
+
+    el.addEventListener("mouseleave", () => {
+        cursor.style.width = "35px";
+        cursor.style.height = "35px";
+    });
+});
+</script>
+
+</body>
+</html>
